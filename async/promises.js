@@ -23,7 +23,7 @@ function adios(nombre) {
             console.log('Adios, ' + nombre);
             console.log('Terminando el proceso');
             resolve();
-        }, 1000)
+        }, 1000);
     });
 }
 

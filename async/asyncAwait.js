@@ -38,4 +38,4 @@ async function main() {
 
 console.log('Empezamos el proceso');
 main();
-console.log('Va a ser la segunda función que se ejecute')
+console.log('Va a ser la segunda función que se ejecute');
