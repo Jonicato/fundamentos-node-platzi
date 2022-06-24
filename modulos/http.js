@@ -6,7 +6,8 @@ function router(req, res) {
 
     switch(req.url) {
         case '/hola':
-            res.write('Hola, ¿qué tal?');
+            let saludo = hola();
+            res.write(saludo);
             res.end();
             break;
         
@@ -22,5 +23,9 @@ function router(req, res) {
 }
 
 http.createServer(router).listen(3000);
+
+function hola() {
+    return 'Hola, que tal';
+}
 
 console.log('Escuchando http en el puerto 3000');
